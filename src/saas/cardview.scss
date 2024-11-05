@@ -1,0 +1,76 @@
+.card-view {
+    padding: 16px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin:50px 0px 10px 0px;
+  }
+  
+  .tabs button {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .tabs button.active {
+    background: #007bff;
+    color: #fff;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.6, 0.2);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    padding: 20px 10px;
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .card-avatar {
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-name {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  .card-role {
+    font-size: 1rem;
+    color: #007bff;
+    margin: 4px 0;
+  }
+  
+  .card-location {
+    font-size: 0.875rem;
+    color: #999;
+  }
+  
